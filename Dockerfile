@@ -4,7 +4,7 @@ RUN apk add --no-cache --virtual .persistent-deps \
         curl \
         openssl \
         # for node-sass module
-        make \
+        make } { \
         gcc \
         g++ \
         python \
