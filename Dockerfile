@@ -11,17 +11,10 @@ RUN apk add --no-cache --virtual .persistent-deps \
         py-pip \
     # Install node packages
     && npm install --silent --save-dev -g \
-        typescript serve
+        serve
 
 WORKDIR /app
 
-COPY package.json package.json
-COPY yarn.lock yarn.lock
-
-RUN yarn install
-
 COPY . .
 
-RUN yarn build
-
-ENTRYPOINT ["serve", "-s", "build"]
+ENTRYPOINT ["serve", "-s"]

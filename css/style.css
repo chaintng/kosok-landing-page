@@ -1,0 +1,881 @@
+/* Theme Name: Landsay - Responsive Landing Page Template
+   Author: Themesdesign
+   Version: 1.0.0
+   File Description: Main CSS file of the template
+*/
+
+
+/****************************
+*   1  :  HELPER            *
+*   2  :  NAVBAR-CUSTOM     *
+*   3  :  HOME              *
+*   4  :  FEATURES          *
+*   5  :  HOW IT WORKS?     *
+*   6  :  VIDEO             *
+*   7  :  TESTIMONIAL       *
+*   8  :  FEATURES FUN      *
+*   9  :  WEB DESC CTA      *
+*   10 :  PRICING           *
+*   11 :  FAQ               *
+*   12 :  START TRIAL FREE  *
+*   13 :  ABOUT US          *
+*   14 :  GET STARTED       *
+*   15 :  BLOG              *
+*   16 :  CONTACT           *
+*   17 :  SUBCRIBE          *
+*   18 :  FOOTER            *
+*   19 :  RESPONSIVE        *
+*****************************/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+p {
+    font-size: 14px;
+}
+
+.btn,
+.btn:focus,
+button,
+button:focus {
+    outline: none !important;
+}
+
+a {
+    text-decoration: none !important;
+    outline: none;
+}
+
+
+/**BACK TO TOP**/
+
+.back-to-top {
+    width: 30px;
+    height: 30px;
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    display: none;
+    text-align: center;
+    z-index: 10000;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background-color: #3c3c3c;
+    transition: all 0.5s;
+}
+
+.back-to-top i {
+    color: #fff;
+    font-size: 22px;
+    display: block;
+    line-height: 30px;
+}
+
+
+/*****************
+    1.HELPER
+*****************/
+
+.section {
+    padding-bottom: 80px;
+    padding-top: 80px;
+    position: relative;
+}
+
+.title-subtitle {
+    max-width: 600px;
+    font-size: 15px;
+}
+
+.font-300 {
+    font-weight: 300;
+}
+
+.btn {
+    padding: 12px 28px;
+    font-size: 15px;
+    transition: all 0.5s;
+    letter-spacing: 0.6px;
+    color: #fff;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+.btn-round {
+    border-radius: 30px;
+}
+
+.vertical-content {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    -webkit-align-items: center;
+    justify-content: center;
+    -webkit-justify-content: center;
+    flex-direction: row;
+    -webkit-flex-direction: row;
+}
+
+.home-center {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+.home-desc-center {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.btn-custom {
+    border: 1px solid;
+}
+
+.btn-custom:hover,
+.btn-custom:focus,
+.btn-custom:active,
+.btn-custom.active,
+.btn-custom.focus,
+.btn-custom:active,
+.btn-custom:focus,
+.btn-custom:hover,
+.open > .dropdown-toggle.btn-custom {
+    color: #f3f3f3;
+}
+
+.btn-outline-custom {
+    border: 1px solid #fff;
+}
+
+.btn-outline-custom:hover,
+.btn-outline-custom:focus,
+.btn-outline-custom:active,
+.btn-outline-custom.active,
+.btn-outline-custom.focus,
+.btn-outline-custom:active,
+.btn-outline-custom:focus,
+.btn-outline-custom:hover,
+.open > .dropdown-toggle.btn-outline-custom {
+    color: #000;
+    background-color: #fff;
+    border-color: #fff;
+}
+
+.bg-overlay {
+    background-color: rgba(36, 42, 53, 0.7);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+}
+
+
+/*********************
+    2.NAVBAR-CUSTOM
+**********************/
+
+.navbar-custom {
+    background-color: transparent;
+    padding: 20px 0px;
+    width: 100%;
+    border-radius: 0px;
+    z-index: 999;
+    margin-bottom: 0px;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.navbar-custom .navbar-nav li a {
+    color: #fff !important;
+    font-size: 14px;
+    background-color: transparent !important;
+    margin: 0 5px;
+    letter-spacing: 0.03em;
+    line-height: 24px;
+    transition: all 0.5s;
+}
+
+.navbar-custom .navbar-brand {
+    color: #fff !important;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 2px;
+    padding-top: 0px;
+}
+
+.navbar-brand img {
+    height: 20px;
+}
+
+.navbar-custom .nav-social li a {
+    color: #fff !important;
+}
+
+.navbar-custom .navbar-toggler {
+    color: #fff;
+    font-size: 35px;
+    padding: 0px;
+}
+
+.navbar-custom .nav-social {
+    margin-left: 25px;
+}
+
+.navbar-custom.nav-sticky {
+    background-color: #242a35 !important;
+    padding: 15px 0px;
+}
+
+
+/*********************
+    3.HOME
+**********************/
+
+.bg-home {
+    background-image: url('../images/leading.jpg');
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    height: 100vh;
+}
+
+.home-title {
+    font-size: 48px;
+    line-height: 1.2;
+}
+
+.home-small-title {
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 12px;
+}
+
+.home-subtitle {
+    max-width: 700px;
+    line-height: 1.6;
+    font-size: 15px;
+    font-weight: 300;
+    opacity: 0.8;
+}
+
+/*--DEMO -2--*/
+
+.home-half{
+    padding: 190px 0px;
+    background-image: url('../images/leading.jpg');
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+
+/*--DEMO -3--*/
+
+.home-registration-form {
+    border-radius: 3px;
+    box-shadow: 0px 0px 3px 0px #000000;
+}
+
+.home-registration-form .registration-form label{
+    font-size: 13px;
+}
+
+.registration-input-box{
+    border:none;
+    border-radius:0px;
+    color: #999;
+    border-bottom: 1px solid #c5c5c5;
+    box-shadow: none !important;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/*--DEMO -4--*/
+.subcribe-form input {
+    padding: 17px 20px;
+    width: 100%;
+    font-size: 14px;
+    color: #4c5667 !important;
+    border: none;
+    outline: none !important;
+    padding-right: 150px;
+    padding-left: 25px;
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 30px;
+}
+
+.subcribe-form button {
+    position: absolute;
+    top: 7px;
+    right: 8px;
+    outline: none !important;
+    border-radius: 30px;
+    font-size: 14px;
+    padding: 9px 30px;
+}
+
+.subcribe-form form {
+    position: relative;
+    max-width: 600px;
+    margin: 0px auto;
+} 
+
+/*--DEMO -5--*/
+
+.bg-home-video{
+    height: 100vh;
+    background-color: #000;
+}
+
+/*--DEMO -6---*/
+.home-dashboard {
+    position: relative;
+    top: 80px;
+    z-index: 1;
+}
+
+.home-prestion{
+    padding-top: 165px;
+    background: linear-gradient(rgb(72, 85, 99), rgb(41, 50, 60));
+}
+
+/*********************
+    4.FEATURES
+**********************/
+
+.service-box .services-icon {
+    font-size: 30px;
+    height: 60px;
+    width: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.service-box {
+    padding: 15px;
+    text-align: center;
+}
+
+.service-box .services-title {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+
+/*********************
+    5.HOW IT WORKS?
+**********************/
+
+.timeline-page {
+    padding: 10px 0;
+    position: relative;
+    margin-top: 35px;
+}
+
+.timeline-page::after {
+    content: "";
+    height: 95%;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 1px;
+    background-color: #e8e8e8;
+}
+
+.timeline-item {
+    margin-bottom: 80px;
+}
+
+.timeline-page .timeline-item .date-label-left {
+    text-align: center;
+    margin-right: 20px;
+    position: relative;
+}
+
+.timeline-page .timeline-item .date-label-left::after,
+.timeline-page .timeline-item .duration-right::after {
+    border: 3px solid rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    content: "";
+    height: 20px;
+    position: absolute;
+    top: 20px;
+    width: 20px;
+    z-index: 1;
+}
+
+.timeline-page .timeline-item .date-label-left::after {
+    right: -45px;
+}
+
+.timeline-page .timeline-item .duration-right::after {
+    left: -45px;
+}
+
+.timeline-page .timeline-item .works-description-right {
+    text-align: left;
+    margin-left: 15px;
+    float: left;
+    border-radius: 0;
+    padding: 20px 0;
+}
+
+.timeline-page .timeline-item .duration-right {
+    text-align: center;
+    margin-left: 20px;
+    position: relative;
+}
+
+.timeline-page .timeline-item .works-description-left {
+    text-align: right;
+    margin-right: 15px;
+    float: right;
+    border-radius: 0;
+    padding: 20px 0;
+}
+
+.timeline-page .timeline-item img {
+    width: 200px;
+}
+
+.timeline-page h4,
+.works-description-left h4 {
+    font-size: 18px;
+    margin-top: 0;
+    text-transform: capitalize;
+}
+
+.timeline-subtitle {
+    line-height: 26px;
+    color: #666;
+}
+
+
+/*********************
+    6.VIDEO
+**********************/
+
+.bg-video {
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    padding: 130px 0;
+}
+
+.video-title {
+    font-weight: 300;
+    font-size: 52px;
+}
+
+.play-btn {
+    height: 80px;
+    width: 80px;
+    font-size: 30px;
+    line-height: 78px;
+    border-radius: 50%;
+    display: inline-block;
+    border: 2px solid #fff;
+    margin-top: 30px;
+}
+
+
+/*********************
+    7.TESTIMONIAL
+**********************/
+
+.review-box .img-post .testi-user-name {
+    font-size: 13px;
+}
+
+.review-box .img-post .testi-work {
+    font-size: 14px;
+}
+
+.user-review {
+    font-weight: 300;
+    max-width: 650px;
+    font-size: 16px;
+}
+
+.client-images img {
+    max-height: 90px;
+    width: auto !important;
+    margin: 10px auto;
+    opacity: 0.3;
+    transition: all 0.5s;
+}
+
+.client-images img:hover {
+    opacity: 0.6;
+}
+
+
+/*********************
+    8.FEATURES FUN
+**********************/
+
+.features-desc {
+    line-height: 30px;
+}
+
+
+/**********************
+    9.WEB DESC CTA
+***********************/
+
+.web-cta-desc {
+    max-width: 550px;
+    line-height: 24px;
+    font-size: 16px;
+}
+
+
+/*********************
+    10.PRICING
+**********************/
+
+.price-box {
+    padding: 40px 50px;
+}
+
+.plan-price h1 span {
+    font-size: 16px;
+    color: #000;
+}
+
+.price-features p i {
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    text-align: center;
+    line-height: 20px;
+    font-size: 14px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+
+/*********************
+    11.FAQ
+**********************/
+
+.faq {
+    position: relative;
+}
+
+.faq-title-desc {
+    line-height: 28px;
+    font-size: 16px;
+}
+
+.faq-subtitle-desc {
+    line-height: 28px;
+}
+
+.faq-title {
+    font-size: 16px;
+}
+
+.faq-sub-title {
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.faqfaq-icon {
+    float: left;
+}
+
+.faq-icon {
+    font-size: 26px;
+    position: absolute;
+    top: 42%;
+    transform: translateY(-50%);
+}
+
+.faq-ans {
+    margin-left: 15%;
+}
+
+
+/*********************
+    12.FREE TRIAL FREE
+**********************/
+
+.sign-form .form-group {
+    position: relative;
+}
+
+.sign-form label {
+    position: absolute;
+    top: 14%;
+    font-size: 25px;
+    margin-left: 14px;
+}
+
+.sign-form .form-control {
+    height: 50px;
+    background-color: transparent;
+    padding: 0 20px 0 50px;
+    font-size: 15px;
+    box-shadow: none;
+}
+
+.sign-icon {
+    color: #9ba1a8;
+}
+
+
+/*********************
+    13.ABOUT US
+**********************/
+
+.about-title h2 {
+    line-height: 42px;
+}
+
+.about-title p {
+    font-size: 17px;
+    line-height: 30px;
+    font-weight: 300;
+}
+
+.about-title {
+    max-width: 800px;
+}
+
+.about-border-left {
+    border-left: 1px solid #e7e7e7;
+}
+
+
+/*********************
+    14.GET STARTED
+**********************/
+
+.cta-title {
+    font-size: 36px;
+    font-weight: 300;
+}
+
+.cta-kivox{
+    max-width: 750px;
+}
+
+.cta-subtitle {
+    font-weight: 300;
+    letter-spacing: 0.6px;
+}
+
+
+/*********************
+    15.BLOG
+**********************/
+
+.blog-post .blog-desc {
+    font-size: 13px;
+    line-height: 22px;
+    letter-spacing: 0.4px;
+}
+
+
+/************************
+    16.CONTACT
+*************************/
+
+.error {
+    margin: 8px 0px;
+    display: none;
+    color: red;
+}
+
+#ajaxsuccess {
+    font-size: 16px;
+    width: 100%;
+    display: none;
+    clear: both;
+    margin: 8px 0px;
+}
+
+.error_message {
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    border: 2px solid #f36270;
+    color: #f36270;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.contact-loader {
+    display: none;
+}
+
+#success_page {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#success_page h3 {
+    color: #0dba26;
+    font-size: 22px;
+}
+
+.custom-form .form-control {
+    height: 40px;
+    border-radius: 3px;
+    box-shadow: none !important;
+    background-color: #f8f9fa;
+    font-size: 13px;
+}
+
+.custom-form textarea.form-control {
+    height: auto !important;
+}
+
+.contact-detail p i {
+    font-size: 20px;
+    position: relative;
+    top: 4px;
+}
+
+
+/*********************
+    17.SUBCRIBE
+**********************/
+
+.search-form input {
+    padding: 17px 20px;
+    width: 100%;
+    font-size: 15px;
+    color: #4c5667 !important;
+    border: none;
+    outline: none !important;
+    padding-right: 160px;
+    padding-left: 30px;
+    border-radius: 30px;
+}
+
+.search-form button {
+    position: absolute;
+    top: 0px;
+    right: -2px;
+    outline: none !important;
+    border-radius: 30px;
+    font-size: 17px;
+    padding: 14px 30px;
+}
+
+.search-form form {
+    position: relative;
+    max-width: 600px;
+    margin: 0px auto;
+}
+
+
+/**********************
+   18.FOOTER
+***********************/
+
+.social .social-icon {
+    border: 2px solid #868e96;
+    border-radius: 50%;
+    transition: all 0.5s;
+    width: 42px;
+    height: 42px;
+    display: block;
+    font-size: 16px;
+    line-height: 40px;
+    text-align: center;
+}
+
+.footer-terms li a:hover {
+    color: #fff !important;
+    transition: all 0.5s;
+}
+
+.footer-terms li::after {
+    content: "|";
+    margin: 0 20px;
+    color: #757575
+}
+
+.footer-terms li:last-child:after {
+    content: "";
+}
+
+.footer {
+    background-color: #242a35;
+}
+
+
+/*********************
+    19.RESPONSIVE
+**********************/
+
+@media (min-width: 200px) and (max-width: 768px) {
+    .navbar-custom {
+        background-color: #000;
+        padding: 10px 0px !important;
+    }
+    .navbar-custom .container {
+        width: 85%;
+    }
+    .about-border-left {
+        border: none;
+    }
+    .home-title {
+        font-size: 34px;
+    }
+    .bg-home,.bg-home-video {
+        height: auto;
+    }
+    .cta-title {
+        font-size: 40px;
+    }
+    .home-half{
+        padding: 130px 0px;
+    }
+    .timeline-page::after {
+        margin: 0;
+    }
+    .timeline-item .duration {
+        float: left !important;
+        margin: 0 0 30px 15px !important;
+        text-align: left !important;
+        position: relative;
+    }
+    .timeline-item .duration::after {
+        left: -24px !important;
+    }
+    .timeline-item .works {
+        text-align: left !important;
+        margin-left: 15px;
+    }
+    .faq-icon {
+        top: -15px;
+        position: relative;
+        transform: none;
+        left: 0;
+    }
+    .faq-ans {
+        margin-left: 0%;
+    }
+}
+
+@media (max-width: 1023px) {
+    .navbar-custom .nav-social {
+        display: none;
+    }
+}
